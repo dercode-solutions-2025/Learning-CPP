@@ -19,7 +19,6 @@ x++ : Inc Commands
 */
 #include <iostream>
 #include <string>
-#include <list>
 #include <cstdlib>
 
 void successful() {
@@ -64,9 +63,6 @@ void exec(std::string opcode) {
     	std::cout << ascii;
     } else if(opcode == "5++") {
     	inc = inc * 2;
-    } else if(opcode == "\n") {
-    	unsuccessful();
-    	std::exit(0);
     }
 }
 
